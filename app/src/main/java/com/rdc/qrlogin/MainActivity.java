@@ -128,7 +128,8 @@ public class MainActivity extends AppCompatActivity implements android.location.
         try {
 
             StrictMode.setThreadPolicy(policy);
-            HttpClient client = new DefaultHttpClient();
+            HttpClient client =
+                    new DefaultHttpClient();
             HttpPost post = new HttpPost("http://34.93.199.150/api/cube/submitted");
 
             // add header
